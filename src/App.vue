@@ -1,26 +1,34 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
+  <div class="uk-container uk-margin-large-top">
+    <div class="uk-grid uk-grid-collapse" uk-grid>
+      <div class="uk-width-expand">
+        <input type="text" class="uk-input" placeholder="Type todo and press enter">
+      </div>
+      <div class="uk-width-small">
+        <button type="button" class="uk-button uk-button-primary">+</button>
+      </div>
 
-  <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-    <h3 class="uk-card-title">Default</h3>
-    <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
+      <div class="uk-width-1-1 uk-margin-top">
 
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+        <div class="">
+          <label for="id-1">
+            <input type="checkbox" class="uk-checkbox" id="id-1">
+            Test Todo
+          </label>
+        </div>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+        <div class="">
+          <label for="id-2">
+            <input type="checkbox" class="uk-checkbox" id="id-2">
+            Test Todo 2
+          </label>
+        </div>
+
+      </div>
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  </div>
 </template>
 
 
