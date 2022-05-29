@@ -1,4 +1,30 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  class TodoItem {
+    id: number;
+    description: string;
+
+    constructor(description: string, id: number) {
+      this.id = id;
+      this.description = description;
+    }
+
+    AddTodo(TodoDescription){
+      // @todo: Get description parameter and add push todo list
+    }
+
+    RemoveTodo(Id){
+      // @todo: Get id parameter find in todo list array and remove
+    }
+
+    EditTodo(Id,TodoDescription){
+      // @todo: Get id parameter find in todo list array and change
+    }
+
+  }
+
+  //const user: User = new TodoItem("Murphy", 1);
+  //console.log(user);
+</script>
 
 <template>
   <div class="uk-container uk-margin-large-top">
